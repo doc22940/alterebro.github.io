@@ -50,7 +50,7 @@ var app = new Vue({
 			var _d = new Date(str);
 			var  d = {
 				d : ("0" + _d.getUTCDate()).slice (-2),
-				m : ("0" + _d.getUTCMonth()).slice (-2),
+				m : ("0" + (_d.getUTCMonth()+1)).slice (-2),
 				y : _d.getUTCFullYear(),
 				hh : ("0" + _d.getUTCHours()).slice (-2),
 				mm : ("0" + _d.getUTCMinutes()).slice (-2)
